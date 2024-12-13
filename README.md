@@ -34,9 +34,37 @@ A Python-based command-line tool for performing common system administration tas
   ```bash
   pip install psutil
 
+
 ## Usage
-  ```bash
-   python3 sys_admin.py {subcommand} [options]
+   **General Command Format**
+   - python3 sys_admin.py {subcommand} [options]
+   **Subcommands**
+     1. User Management:
+         - Create a single user:
+         - Create users from CSV file:
+         - Update a user's password
+         - Delete a user
+            python3 sys_admin.py user --create --username <username> --role <role>
+     2. Directory Management:
+        - Organize files in a directory:
+     4. System Health Monitoring:
+        - Monitor CPU and memory usage for 10 minutes:
+        - Check disk space usage
+
+## Error Handling
+
+- Invalid Inputs are logged in error_log.log
+Example error message:
+   [ERROR] Invalid username format. Usernames should not contain spaces.
+   [INFO] Error logged to error_log.log.
+
+
+
+
+         
+
+      
+      
 
 
 
