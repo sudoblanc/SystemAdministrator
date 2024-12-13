@@ -33,3 +33,12 @@ A Python-based command-line tool for performing common system administration tas
   Install required packages using:
   ```bash
   pip install psutil
+
+## Usage
+  ```bash
+   python3 sys_admin.py {subcommand} [options]
+
+
+
+
+  
