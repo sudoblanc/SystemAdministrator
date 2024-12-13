@@ -1,38 +1,38 @@
-# SystemAdministrator
-# System Administration Script
+# SysAdmin Script
 
-A Python-based command-line tool for performing common system administration tasks, including user management, directory organization, and system health monitoring. 
-
----
+This Python script automates various system administration tasks, including user management, directory organization, system health monitoring, and log monitoring. It provides a convenient way to manage users, organize files, monitor system performance, and analyze logs for critical issues.
 
 ## Features
+- **User Management**:
+  - Create a single user with a specified role (admin/user).
+  - Create users in bulk from a CSV file.
+  - Delete users.
+  - Update user passwords.
 
-1. **User Management**  
-   - Create single or batch users from a CSV file.  
-   - Update user passwords.  
-   - Delete users.  
-   - Validate usernames to ensure proper format (no spaces).
+- **Directory Organization**:
+  - Organize files in a specified directory by their file extensions.
 
-2. **Directory Organization**  
-   - Organize files within a directory by file type.
+- **System Health Monitoring**:
+  - Monitor CPU and memory usage every minute for 10 minutes and log the data.
+  - Check disk space usage in a specified directory and alert if it exceeds a given threshold.
 
-3. **System Health Monitoring**  
-   - Monitor CPU and memory usage at 1-minute intervals.
-   - Check disk space usage and alert if thresholds are exceeded.
+- **Log File Monitoring**:
+  - Monitor a log file for critical messages and save the results in a summary file.
 
-4. **Centralized Logging**  
-   - Logs errors and system health information with timestamps.  
-   - Logs are stored in `error_log.log` and `system_health.log`.
+## Prerequisites
+- Python 3.x
+- `psutil` package for system monitoring (`pip install psutil`)
+- `sudo` privileges (for user management and system modifications)
 
----
+## Setup
 
-## Requirements
+### Clone the repository
+If you haven’t already cloned the repository, do so using the following command:
 
-- **Python Version**: Python 3.6 or later
-- **Dependencies**:  
-  Install required packages using:
-  ```bash
-  pip install psutil
+```bash
+git clone https://github.com/yourusername/sysadmin-script.git
+cd sysadmin-script
+
 
 
 ## Usage
